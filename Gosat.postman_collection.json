@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "ab06ed17-6810-4dc7-8789-d736b7d7bab9",
+		"name": "Gosat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32263438"
+	},
+	"item": [
+		{
+			"name": "Simulação Oferta - Local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cpf\": \"222.222.222.22\",\n\t\"instituicao_id\": 2,\n\t\"codModalidade\": \"a50ed2ed-2b8b-4cc7-ac95-71a5568b34ce\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oferta",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oferta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Crédito - Local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cpf\": \"111.111.111-11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/credito",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relatório - Local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/relatorio",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"relatorio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ofertas mais vantajosas - Local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cpf\": \"111.111.111.11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ofertas-mais-vantajosas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ofertas-mais-vantajosas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
